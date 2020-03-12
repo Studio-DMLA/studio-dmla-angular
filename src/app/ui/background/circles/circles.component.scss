@@ -1,0 +1,10 @@
+.circles-grid {
+    position: absolute;
+    top: 10vh;
+    left: 5vw;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(2vw, 25px));
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+}

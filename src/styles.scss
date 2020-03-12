@@ -1,1 +1,92 @@
+@import "style-vars.scss";
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  color: black;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color-dark);
+  min-height: 100vh;
+  min-width: 100vw;
+  animation: background var(--transition-long) ease-out;
+}
+
+article {
+display: flex;
+min-height: 100vh;
+min-width: 100vw;
+justify-content: center;
+align-items: center;
+}
+
+.logo {
+width: 35vw;
+text-align: center;
+color: var(--text-light-grey);
+ h2 {
+   font-weight: 600;
+   font-size: 2rem;
+ }
+ p {
+   font-weight: 500;
+   font-size: 1.2rem;
+ }
+}
+.currentColor {
+  fill: var(--bg-color-light)
+}
+.fa-sun {
+  max-width: 7vw;
+  margin: 0.7rem;
+}
+.rect {
+  position: absolute;
+  fill: var(--accent-color);
+  animation: rectangle-logo var(--transition-short) ease-in-out;
+  animation-fill-mode: backwards;
+}
+
+.block {
+  position: fixed;
+  right:0;
+  bottom: 0;
+  height: 5vw;
+  width: 5vw;
+  opacity: 1;
+  background-color: var(--accent-color);
+  animation: cube var(--transition-long) ease-in-out;
+  animation-fill-mode: backwards;
+}
+
+.studio {
+  fill:var(--text-light-grey);
+}
+
+.dmla {
+  fill:var(--bg-color-light);
+}
+
+.hiding {
+  animation: hide var(--transition-short) ease-in-out;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes cube {
+  from { height: 50vh; width: 50vw; opacity: 0;}
+  to { height: 5vw; width: 5vw; opacity: 1;}
+}
+@keyframes hide {
+  from { opacity: 1;}
+  to { opacity: 0; }
+}
+@keyframes background {
+  from { background-color: var(--bg-color-light);}
+  to { background-color: var(--bg-color-dark);}
+}
+@keyframes rectangle-logo {
+  from { width: 100vw;}
+  to { width: 10vw;}
+}
