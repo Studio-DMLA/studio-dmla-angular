@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "studio-dmla": {
+      "hosting": {
+        "fr-dmla": [
+          "studio-dmla"
+        ]
+      }
+    }
+  }
+}

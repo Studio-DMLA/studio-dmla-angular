@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "fr-dmla",
+      "public": "dist/fr-dmla",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}
