@@ -2,10 +2,13 @@
 aside.open {
     width: 18rem;
     border-right: solid $accent-color 1px;
+    padding-left: 1rem;
 }
 aside.closed {
     width: 2rem;
     border-right: solid $accent-color 3px;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
 }
 
 aside {
@@ -52,6 +55,7 @@ aside {
                 li {
                     padding: 0;
                     margin: 0;
+                    margin-bottom: 1rem;
                     max-width: 100%;
                     svg {
                         width: 1.8rem;
@@ -59,7 +63,7 @@ aside {
                     a {
                         text-decoration: none;
                         font-weight: 500;
-                        font-size: 3rem;
+                        font-size: 2rem;
                         color: $text-light-grey;
                         span {
                             margin-left: 1.2rem;

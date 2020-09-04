@@ -17,4 +17,10 @@ export class SidebarComponent implements OnInit {
     this.sidebarOpen = !this.sidebarOpen;
   }
 
+  openSidebar() {
+    this.sidebarOpen = true;
+  }
+  closeSidebar() {
+    this.sidebarOpen = false;
+  }
 }
