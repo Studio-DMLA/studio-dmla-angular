@@ -17,6 +17,14 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "lodash",
+              "firebase",
+              "@firebase/app",
+              "@firebase/firestore",
+              "@firebase/functions",
+              "@firebase/auth"
+          ],
             "outputPath": "dist/fr-dmla",
             "index": "src/index.html",
             "main": "src/main.ts",
