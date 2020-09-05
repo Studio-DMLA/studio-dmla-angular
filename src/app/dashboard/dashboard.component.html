@@ -1,0 +1,8 @@
+    <editor 
+    [apiKey]="tinyApiKey" 
+    [init]="{plugins: 'lists link image paste help wordcount'}"
+    [(initialValue)]="content"
+    (onBlur)="handleEvent($event)">
+</editor>
+
+<div [froalaEditor]="options" [(froalaModel)]="content"></div>
