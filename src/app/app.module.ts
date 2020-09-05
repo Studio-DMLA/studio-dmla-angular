@@ -18,11 +18,12 @@ import { CirclesComponent } from './ui/background/circles/circles.component';
 import { CircleComponent } from './ui/background/circles/circle/circle.component';
 import { BackgroundComponent } from './ui/background/background.component';
 import { SidebarComponent } from './ui/sidebar/sidebar.component';
+import { PageComponent } from './ui/page/page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SquaresComponent, CirclesComponent, CircleComponent, BackgroundComponent, UiComponent, SidebarComponent
+    SquaresComponent, CirclesComponent, CircleComponent, BackgroundComponent, UiComponent, SidebarComponent, PageComponent
   ],
   imports: [
     BrowserModule,
