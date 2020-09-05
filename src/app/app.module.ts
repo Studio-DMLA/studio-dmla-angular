@@ -19,11 +19,12 @@ import { CircleComponent } from './ui/background/circles/circle/circle.component
 import { BackgroundComponent } from './ui/background/background.component';
 import { SidebarComponent } from './ui/sidebar/sidebar.component';
 import { PageComponent } from './ui/page/page.component';
+import { LazyImagesDirective } from './tools/lazy-images/lazy-images.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SquaresComponent, CirclesComponent, CircleComponent, BackgroundComponent, UiComponent, SidebarComponent, PageComponent
+    SquaresComponent, CirclesComponent, CircleComponent, BackgroundComponent, UiComponent, SidebarComponent, PageComponent, LazyImagesDirective
   ],
   imports: [
     BrowserModule,

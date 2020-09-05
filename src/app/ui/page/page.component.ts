@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
+import { ActivatedRoute, ParamMap } from '@angular/router';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-page',
@@ -8,14 +10,16 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class PageComponent implements OnInit {
 
-  constructor(private sanitizer: DomSanitizer) {}
+  constructor(private sanitizer: DomSanitizer,
+              private route: ActivatedRoute
+    ) {}
 
-  title: string = 'About';
-  content = `<p>At Studio DMLA we believe that work should go beyond the industrial model, and we build a culture that empowers remote collaboration, autonomy, results and a shared vision.</p><p>
-  We do not do business as usual. Our digital boutique have real connections with our clients, provides perspective, and solutions for problems they did not know they have.</p><p>
-  We partner with the best in each field to deliver cutting-edge digital solutions to your organization while being responsible for the project management and final product.</p>`;
+  title: string;
+  content: string;
 
   ngOnInit(): void {
+    this.title = this.route.snapshot.data.title;
+    this.content = this.route.snapshot.data.content;
   }
 
   sanitize(e) {

@@ -1,9 +1,17 @@
 .box {
+    position: relative;
+    z-index: 100;
     max-width: 80vw;
+    min-height: 25vh;
     padding: 1rem;
     background-color: rgba($color: #ececec, $alpha: 0.8);
-    position: relative;
-    
-    margin-left: auto;
-    margin-right: auto;
+    .title {
+        line-height: 2rem;
+        font-size: 2.2rem;
+    }
+    .content {
+        padding: 1rem;
+        width: 88%;
+        font-weight: 550;
+    }
 }

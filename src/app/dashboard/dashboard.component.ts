@@ -23,14 +23,11 @@ export class DashboardComponent implements OnInit {
   We partner with the best in each field to deliver cutting-edge digital solutions to your organization while being responsible for the project management and final product.</p>`;
   tinyApiKey: string;
 
-  public options: Object = {
-  };
-
   ngOnInit(): void {
   }
 
   handleEvent(e) {
-    console.log({event: e, html: e.editor.iframeElement.contentDocument.all[5].childNodes[0].parentElement.innerHTML});
+    // console.log({event: e, html: e.editor.iframeElement.contentDocument.all[5].childNodes[0].parentElement.innerHTML});
     this.content = e.editor.iframeElement.contentDocument.all[5].childNodes[0].parentElement.innerHTML;
   }
   sanitize(e) {
