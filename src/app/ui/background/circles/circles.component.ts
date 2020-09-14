@@ -1,10 +1,11 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { Circle } from './circle/circle';
 
 @Component({
   selector: 'app-circles',
   templateUrl: './circles.component.html',
-  styleUrls: ['./circles.component.scss']
+  styleUrls: ['./circles.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CirclesComponent {
 
