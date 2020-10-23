@@ -1,106 +1,110 @@
-@import '../../../style-vars.scss';
+@import "../../../style-vars.scss";
 aside.open {
-    width: 18rem;
-    border-right: solid $accent-color 1px;
-    padding-left: 1rem;
+  width: 18rem;
+  border-right: solid $accent-color 1px;
+  padding-left: 1rem;
 }
 aside.closed {
-    width: 2rem;
-    border-right: solid $accent-color 3px;
-    padding-left: 0.2rem;
-    padding-right: 0.2rem;
+  width: 2rem;
+  border-right: solid $accent-color 3px;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
 }
 
 aside {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 999;
-    height: 100vh;
-    background-color: $bg-color-dark;
-    nav {
-        display: grid;
-        height: 100%;
-        grid-column: 1;
-        grid-template-areas:  'logo'
-                              'nav'
-                              'end';
-        .aside-logo {
-            display: flex;
-            grid-area: 'logo';
-            width: 100%;
-            height: 3.2rem;
-            justify-content: center;
-            align-items: center;
-            margin-top: 0.3rem;
-            padding: 0.3rem;
-            img {
-                max-width: 8rem;
-            }
-            .alt-logo {
-                max-width: 90%;
-                margin-left: -0.9rem;
-            }
-        }
-
-        .nav {
-            height: 85vh;
-            ul {
-                display: flex;
-                flex-direction: column;
-                height: 100%;
-                list-style: none;
-                padding: 0;
-                margin: 0;
-                li {
-                    padding: 0;
-                    margin: 0;
-                    margin-bottom: 1rem;
-                    max-width: 100%;
-                    svg {
-                        width: 1.8rem;
-                    }
-                    a {
-                        text-decoration: none;
-                        font-weight: 500;
-                        font-size: 2rem;
-                        color: $text-light-grey;
-                        span {
-                            margin-left: 1.2rem;
-                        };
-                    }
-                }
-                li:last-child {
-                    margin-top: auto;
-                }
-                .svg-inline--fa {
-                    fill: $text-light-grey;
-                }
-            }
-        }
-        
-        .end {            
-            grid-area: 'end';
-            font-weight: 600;
-            font-size: 3rem;
-            color: $accent-color;
-            cursor: pointer;
-        }
-        .end.open {
-            transform: rotate(180deg);
-            animation: rotate $transition-short ease-in-out;
-            text-align: right;
-        }
-        .end.closed {
-            transform: rotate(0deg);
-            animation: rotate $transition-short ease-in-out;
-            animation-direction: reverse;
-            text-align: center;
-        }
-        @keyframes rotate {
-            from { transform: rotate(0deg);}
-            to { transform: rotate(180deg);}
-        }
-        
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  height: 100vh;
+  background-color: $bg-color-dark;
+  nav {
+    display: grid;
+    height: 100%;
+    grid-column: 1;
+    grid-template-areas:
+      "logo"
+      "nav"
+      "end";
+    .aside-logo {
+      display: flex;
+      grid-area: "logo";
+      width: 100%;
+      height: 3.2rem;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0.3rem;
+      padding: 0.3rem;
+      img {
+        max-width: 8rem;
+      }
+      .alt-logo {
+        max-width: 90%;
+        margin-left: -0.9rem;
+      }
     }
+
+    .nav {
+      height: 85vh;
+      ul {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+          padding: 0;
+          margin: 0;
+          margin-bottom: 1rem;
+          max-width: 100%;
+          svg {
+            width: 1.8rem;
+          }
+          a {
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 2rem;
+            color: $text-light-grey;
+            span {
+              margin-left: 1.2rem;
+            }
+          }
+        }
+        li:last-child {
+          margin-top: auto;
+        }
+        .svg-inline--fa {
+          fill: $text-light-grey;
+        }
+      }
+    }
+
+    .end {
+      grid-area: "end";
+      font-weight: 600;
+      font-size: 3rem;
+      color: $accent-color;
+      cursor: pointer;
+    }
+    .end.open {
+      transform: rotate(180deg);
+      animation: rotate $transition-short ease-in-out;
+      text-align: right;
+    }
+    .end.closed {
+      transform: rotate(0deg);
+      animation: rotate $transition-short ease-in-out;
+      animation-direction: reverse;
+      text-align: center;
+    }
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(180deg);
+      }
+    }
+  }
 }
