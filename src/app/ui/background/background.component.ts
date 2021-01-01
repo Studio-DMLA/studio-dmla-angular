@@ -1,4 +1,6 @@
 import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Theme, ThemeService } from 'src/app/services/theme.service';
 
 @Component({
   selector: 'app-background',
@@ -8,10 +10,14 @@ import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core
 })
 export class BackgroundComponent implements OnInit {
   @Input() started: boolean;
+  start$: Observable<Boolean>;
+  theme$: Observable<Theme>;
 
-  constructor() { }
+  constructor(public themeService: ThemeService) { }
 
   ngOnInit(): void {
+    this.start$ = this.themeService.started$;
+    this.theme$ = this.themeService.theme$;
   }
 
 }

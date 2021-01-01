@@ -1,4 +1,6 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Theme, ThemeService } from 'src/app/services/theme.service';
 
 @Component({
   selector: 'app-squares',
@@ -7,8 +9,12 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SquaresComponent  {
+  start$: Observable<Boolean>;
+  theme$: Observable<Theme>;
 
-   constructor() {
+  constructor(public themeService: ThemeService) {
+    this.start$ = this.themeService.started$;
+    this.theme$ = this.themeService.theme$;
    }
 
 

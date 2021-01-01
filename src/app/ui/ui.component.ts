@@ -1,4 +1,6 @@
 import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Theme, ThemeService } from '../services/theme.service';
 
 @Component({
   selector: 'app-ui',
@@ -8,9 +10,19 @@ import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core
 })
 export class UiComponent implements OnInit {
 @Input() started: boolean;
-  constructor() { }
+start$: Observable<Boolean>;
+theme$: Observable<Theme>;
+Theme = Theme;
 
-  ngOnInit(): void {
+constructor(public themeService: ThemeService) { }
+
+ngOnInit(): void {
+  this.start$ = this.themeService.started$;
+  this.theme$ = this.themeService.theme$;
+}
+
+
+  changeTheme() {
+    this.themeService.changeTheme();
   }
-
 }

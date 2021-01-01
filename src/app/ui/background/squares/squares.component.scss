@@ -6,8 +6,16 @@
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-image: url('../../../../assets/squares-bg.svg');
-    background-repeat: no-repeat;
     background-size: 120vw 120vh;
+    background-repeat: no-repeat;
+    animation: dark light var(--transition-long) ease-in-out;
     background-position: 70% 40%;
+}
+
+.dark {
+    background-image: url('../../../../assets/squares-bg.svg');
+}
+
+.light {
+    background-image: url('../../../../assets/squares-bg-light.svg');
 }

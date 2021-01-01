@@ -1,5 +1,7 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
+import { Observable } from 'rxjs';
+import { Theme, ThemeService } from 'src/app/services/theme.service';
 import { pages, Page } from '../page/pages-data';
 
 @Component({
@@ -11,12 +13,18 @@ import { pages, Page } from '../page/pages-data';
 export class SidebarComponent implements OnInit {
   sidebarOpen = false;
   pages: Page[];
-  constructor(private sanitizer: DomSanitizer) {
+  theme$: Observable<Theme>;
+  constructor(private sanitizer: DomSanitizer, public themeService: ThemeService) {
     this.pages = Object.values(pages).filter(page => page.active);
+    this.theme$ = themeService.theme$;
     console.log(this.pages);
   }
 
   ngOnInit(): void {
+  }
+
+  get logoFile(): string {
+    return `../../../assets/logos/logo-dmla-${this.themeService.getTheme}.svg`;
   }
 
   toggleSidebar() {
@@ -32,7 +40,6 @@ export class SidebarComponent implements OnInit {
   
 
   sanitize(e) {
-    console.log(e)
     return this.sanitizer.bypassSecurityTrustHtml(e);
   }
 }

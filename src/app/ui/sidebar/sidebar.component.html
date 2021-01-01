@@ -1,14 +1,15 @@
-<aside [ngClass]="{open: sidebarOpen, closed: !sidebarOpen}" (mouseenter)="openSidebar()" (mouseleave)="closeSidebar()">
+<ng-container *ngIf="(theme$ | async) as theme">
+<aside [ngClass]="{open: sidebarOpen, closed: !sidebarOpen, light: theme === 'light', dark: theme === 'dark'}" (mouseenter)="openSidebar()" (mouseleave)="closeSidebar()">
     <nav>
         <a class="aside-logo" [routerLink]="''"  >
-          <img *ngIf="sidebarOpen else closed" src="../../../assets/studio-dmla.svg" alt="logo studio dmla"></a>
+          <img *ngIf="sidebarOpen else closed" [src]="logoFile" alt="logo studio dmla"></a>
         <div class="nav"  [ngClass]="{open: sidebarOpen}">
             <ul>
                 <li *ngFor="let page of pages">
                     <a [routerLink]="page.link" >
                         <svg aria-hidden="true" focusable="false" data-prefix="fab" 
                         class="svg-inline--fa fa-w-14" [ngClass]="'fa-' + page.menu_icon.desc" role="img" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 448 512" [innerHTML]="sanitize(page.menu_icon.dark)">
+                        viewBox="0 0 448 512" [innerHTML]="sanitize(page.menu_icon[theme])">
                         
                       </svg>
                         <span *ngIf="sidebarOpen">{{page.title}}</span>
@@ -34,5 +35,6 @@
 </aside>
 
 <ng-template #closed>
-    <img class="alt-logo" src="../../../assets/icons/icon-128x128.png" alt="alt studio dmla logo">
+    <img class="alt-logo" src="../../../assets/icons/android-chrome-192x192.png" alt="alt studio dmla logo">
 </ng-template>
+</ng-container>
