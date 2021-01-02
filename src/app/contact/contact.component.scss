@@ -1,0 +1,20 @@
+.box {
+    position: relative;
+    z-index: 100;
+    min-width: 80vw;
+    min-height: 75vh;
+    max-height: 85vh;
+    padding: 1rem;
+    background-color: rgba($color: #ececec, $alpha: 0.8);
+    overflow: auto;
+    overflow-x: hidden;
+    .title {
+        line-height: 2rem;
+        font-size: 2.2rem;
+    }
+    .content {
+        padding: 1rem;
+        width: 88%;
+        font-weight: 450;
+    }
+}

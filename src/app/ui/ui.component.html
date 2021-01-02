@@ -4,11 +4,11 @@
   <app-background started="started"></app-background>
   <div class="block" style="cursor: pointer;" (click)="changeTheme()">
     <ng-container *ngIf="(theme$ | async) as theme">
-      <img 
-      *ngIf="theme === Theme.Dark; else Light" src="../../assets/fa/sun-solid.svg" alt="" srcset="" class="toggle {{theme}}">
-    <ng-template #Light>
-      <img src="../../assets/fa/moon-solid.svg" alt="" srcset="" class="toggle {{theme}}">
-    </ng-template>
-    </ng-container>    
+      <img *ngIf="theme === Theme.Dark; else Light" src="../../assets/fa/sun-solid.svg" alt="" srcset=""
+        class="toggle {{theme}}">
+      <ng-template #Light>
+        <img src="../../assets/fa/moon-solid.svg" alt="" srcset="" class="toggle {{theme}}">
+      </ng-template>
+    </ng-container>
   </div>
 </div>

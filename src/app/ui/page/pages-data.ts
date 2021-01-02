@@ -24,19 +24,13 @@ export const pages: Pages = {
     </div>
     <h1 class="tagline">Digital marketing, the real stuff</h1>
     <p >
-      At Studio DMLA we believe that work should go beyond the industrial
-      model, and we build a culture that empowers remote collaboration,
-      autonomy, results and a shared vision.
+    •	Set up an initial call to discuss your digital marketing needs and goals;
     </p>
     <p>
-      We do not do business as usual. Our digital boutique have real
-      connections with our clients, provides perspective, and solutions
-      for problems they did not know they have.
+    •	We’ll create a strategy and source the best professionals globally to work on your project;
     </p>
     <p>
-      We partner with the best in each field to deliver cutting-edge
-      digital solutions to your organization while being responsible for
-      the project management and final product.
+    •	You’ll have one point of contact, from the planning until the final product is delivered. 
     </p></div>`,
   },
   about: {
@@ -50,11 +44,12 @@ export const pages: Pages = {
     },
     content: `<p>At Studio DMLA we believe that work should go beyond the industrial model, and we build a culture that empowers remote collaboration, autonomy, results and a shared vision.</p><p>
         We do not do business as usual. Our digital boutique have real connections with our clients, provides perspective, and solutions for problems they did not know they have.</p><p>
-        We partner with the best in each field to deliver cutting-edge digital solutions to your organization while being responsible for the project management and final product.</p>`,
+        We partner with the best in each field to deliver cutting-edge digital solutions to your organization while being responsible for the project management and final product.</p>
+        <div class="meetings-iframe-container" data-src="https://meetings.hubspot.com/mariapaula3?embed=true"></div>`,
   },
   projects: {
-    title: "Projects",
-    active: false,
+    title: "Portfolio",
+    active: true,
     link: "projects",
     menu_icon: {
       dark: `<path 
@@ -65,11 +60,23 @@ export const pages: Pages = {
           </path>`,
       desc: "buffer",
     },
-    content: ``,
+    content: `<p>Check out the latest projects we have been working on:</p>
+    <div class="card" >
+      <a href="https://lnkd.in/gqXYtsK">
+        <h3>2021 Global Village Hawaii Fee Sheet:</h3>
+        <img src="https://lnkd.in/gqXYtsK" />
+      </a>
+    </div>
+    <div class="card" >
+      <a href="https://lnkd.in/gsZKx9F">
+        <h3>2021 Global Village Hawaii Brochure:</h3>
+        <img src="https://lnkd.in/gsZKx9F" />
+      </a>
+    </div>`,
   },
   services: {
     title: "Services",
-    active: false,
+    active: true,
     link: "services",
     menu_icon: {
       dark: `<path 
@@ -80,7 +87,36 @@ export const pages: Pages = {
           </path>`,
       desc: "seedling",
     },
-    content: ``,
+    content: `<p>At Studio DMLA we believe that work should go beyond the industrial model, and we build a culture that empowers remote collaboration, autonomy, results, and a shared vision. </p>
+    <p>We do not do business as usual. Our digital boutique has real connections with our clients, provides perspective, and solutions for problems they did not know they have. </p>
+    <p>We partner with the best in each field globally to deliver cutting-edge digital solutions to your organization while being responsible for the strategy, project management, and final product. </p>
+    <br>
+    <ul>
+      <li>
+        <h3>Web Design</h3>
+        <p>Design thinking, lean UX/UI, interface design, prototypes, and gamification.</p>
+      </li>
+      <li>
+        <h3>Web Development</h3>
+        <p></p>
+      </li>
+      <li>
+        <h3>eCommerce</h3>
+        <p>Including coding from scratch, implementing web components, Angular developments, and Word Press templates customization. </p>
+      </li>
+      <li>
+        <h3>CRM set up</h3>
+        <p>Setup WooCommerce, configuration, SSL Enabling, and server requirements.</p>
+      </li>
+      <li>
+        <h3>SEO & SEM</h3>
+        <p>Database organization; Sales and Marketing workflows; onboarding and training.</p>
+      </li>
+      <li>
+        <h3>Offline marketing</h3>
+        <p>Visual identity – Brand manual, logo design, and corporate materials. Flyer, folder, and brochure design to be displayed online and/or printed.</p>
+      </li>
+    </ul>`,
   },
   sign_up: {
     title: "Sign up for work",
@@ -101,6 +137,21 @@ export const pages: Pages = {
     title: "Hire Staff",
     active: false,
     link: "hire",
+    menu_icon: {
+      dark: `<path 
+            d="M127.1 146.5c1.3 7.7 8 13.5 16 13.5h16.5c9.8 0 17.6-8.5 16.3-18-3.8-28.2-16.4-54.2-36.6-74.7-14.4-14.7-23.6-33.3-26.4-53.5C111.8 5.9 105 0 96.8 0H80.4C70.6 0 63 8.5 64.1 18c3.9 31.9 18 61.3 40.6 84.4 12 12.2 19.7 27.5 22.4 44.1zm112 0c1.3 7.7 8 13.5 16 13.5h16.5c9.8 0 17.6-8.5 16.3-18-3.8-28.2-16.4-54.2-36.6-74.7-14.4-14.7-23.6-33.3-26.4-53.5C223.8 5.9 217 0 208.8 0h-16.4c-9.8 0-17.5 8.5-16.3 18 3.9 31.9 18 61.3 40.6 84.4 12 12.2 19.7 27.5 22.4 44.1zM400 192H32c-17.7 0-32 14.3-32 32v192c0 53 43 96 96 96h192c53 0 96-43 96-96h16c61.8 0 112-50.2 112-112s-50.2-112-112-112zm0 160h-16v-96h16c26.5 0 48 21.5 48 48s-21.5 48-48 48z">
+          </path>`,
+      light: `<path fill="currentColor"
+            d="M127.1 146.5c1.3 7.7 8 13.5 16 13.5h16.5c9.8 0 17.6-8.5 16.3-18-3.8-28.2-16.4-54.2-36.6-74.7-14.4-14.7-23.6-33.3-26.4-53.5C111.8 5.9 105 0 96.8 0H80.4C70.6 0 63 8.5 64.1 18c3.9 31.9 18 61.3 40.6 84.4 12 12.2 19.7 27.5 22.4 44.1zm112 0c1.3 7.7 8 13.5 16 13.5h16.5c9.8 0 17.6-8.5 16.3-18-3.8-28.2-16.4-54.2-36.6-74.7-14.4-14.7-23.6-33.3-26.4-53.5C223.8 5.9 217 0 208.8 0h-16.4c-9.8 0-17.5 8.5-16.3 18 3.9 31.9 18 61.3 40.6 84.4 12 12.2 19.7 27.5 22.4 44.1zM400 192H32c-17.7 0-32 14.3-32 32v192c0 53 43 96 96 96h192c53 0 96-43 96-96h16c61.8 0 112-50.2 112-112s-50.2-112-112-112zm0 160h-16v-96h16c26.5 0 48 21.5 48 48s-21.5 48-48 48z">
+          </path>`,
+      desc: "mug-hot",
+    },
+    content: ``,
+  },
+  meet: {
+    title: "Book a meeting",
+    active: false,
+    link: "contact/meeting",
     menu_icon: {
       dark: `<path 
             d="M127.1 146.5c1.3 7.7 8 13.5 16 13.5h16.5c9.8 0 17.6-8.5 16.3-18-3.8-28.2-16.4-54.2-36.6-74.7-14.4-14.7-23.6-33.3-26.4-53.5C111.8 5.9 105 0 96.8 0H80.4C70.6 0 63 8.5 64.1 18c3.9 31.9 18 61.3 40.6 84.4 12 12.2 19.7 27.5 22.4 44.1zm112 0c1.3 7.7 8 13.5 16 13.5h16.5c9.8 0 17.6-8.5 16.3-18-3.8-28.2-16.4-54.2-36.6-74.7-14.4-14.7-23.6-33.3-26.4-53.5C223.8 5.9 217 0 208.8 0h-16.4c-9.8 0-17.5 8.5-16.3 18 3.9 31.9 18 61.3 40.6 84.4 12 12.2 19.7 27.5 22.4 44.1zM400 192H32c-17.7 0-32 14.3-32 32v192c0 53 43 96 96 96h192c53 0 96-43 96-96h16c61.8 0 112-50.2 112-112s-50.2-112-112-112zm0 160h-16v-96h16c26.5 0 48 21.5 48 48s-21.5 48-48 48z">

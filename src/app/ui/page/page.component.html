@@ -1,9 +1,8 @@
-<div  class="center">
+<div class="center">
     <div class="box">
         <div *ngIf="title" class="title">
             <h1>{{ title }}</h1>
         </div>
-        <div class="content" [innerHTML]="sanitize(content)"></div>
+        <div *ngIf="content" class="content" [innerHTML]="sanitize(content)"></div>
     </div>
-</div >
-
+</div>

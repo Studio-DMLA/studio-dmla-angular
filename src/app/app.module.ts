@@ -36,6 +36,7 @@ import { LazyImagesDirective } from './tools/lazy-images/lazy-images.directive';
     AngularFireStorageModule
   ],
   providers: [],
+  exports:      [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
