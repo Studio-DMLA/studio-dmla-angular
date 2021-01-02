@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -24,10 +26,18 @@ import { LazyImagesDirective } from './tools/lazy-images/lazy-images.directive';
 @NgModule({
   declarations: [
     AppComponent,
-    SquaresComponent, CirclesComponent, CircleComponent, BackgroundComponent, UiComponent, SidebarComponent, PageComponent, LazyImagesDirective
+    SquaresComponent, 
+    CirclesComponent, 
+    CircleComponent, 
+    BackgroundComponent, 
+    UiComponent, 
+    SidebarComponent, 
+    PageComponent,
+    LazyImagesDirective
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     AngularFireModule.initializeApp(environment.firebase),
@@ -36,7 +46,7 @@ import { LazyImagesDirective } from './tools/lazy-images/lazy-images.directive';
     AngularFireStorageModule
   ],
   providers: [],
-  exports:      [],
+  exports: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

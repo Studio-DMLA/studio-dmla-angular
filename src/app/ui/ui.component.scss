@@ -11,3 +11,14 @@
 .toggle.light {
     filter: invert(0.25);
 }
+
+.block2 {
+  position: fixed;
+  right:0;
+  bottom: 0;
+  height: 5vw;
+  width: 5vw;
+  opacity: 1;
+  padding: 0.5rem;
+  background-color: var(--accent-color);
+}

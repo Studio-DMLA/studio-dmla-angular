@@ -19,7 +19,10 @@ export class ThemeService {
   public readonly theme$: Observable<Theme> = this._theme.asObservable();
 
 
-  constructor() {}
+  constructor() {
+    this._started.subscribe(start => console.log(start));
+    this._theme.subscribe(themed => console.log(themed));
+  }
 
   get getTheme(): Theme {
     return this.theme;
@@ -31,5 +34,6 @@ export class ThemeService {
   }
   appStarted() {
     this._started.next(true);
+    this.started = true;
   }
 }

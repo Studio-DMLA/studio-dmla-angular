@@ -7,6 +7,7 @@ body {
   min-height: 100vh;
   min-width: 100vw;
   color: black;
+  overflow: hidden;
 }
 body.dark {
   animation: var(--transition-long) ease-in-out;
@@ -17,9 +18,10 @@ body.light {
   animation: var(--transition-long) ease-in-out;
 }
 
-article {
+#main article {
+  overflow: hidden;
 display: flex;
-min-height: 100vh;
+padding-top: 5rem;
 min-width: 100vw;
 justify-content: center;
 align-items: center;
@@ -82,6 +84,10 @@ color: var(--text-light-grey);
   display: none;
 }
 
+.started {
+  animation: start var(--transition-long) ease-in;
+}
+
 @keyframes cube {
   from { height: 50vh; width: 50vw; opacity: 0;}
   to { height: 5vw; width: 5vw; opacity: 1;}
@@ -98,6 +104,10 @@ color: var(--text-light-grey);
   from { width: 100vw;}
   to { width: 10vw;}
 }
+@keyframes start {
+  from { opacity: 0;}
+  to { opacity: 1;}
+}
 
 .center {
   display: flex;
@@ -112,4 +122,16 @@ color: var(--text-light-grey);
   margin-block-start: 0.6rem !important;
   margin-block-end: 0.3rem !important;
   line-height: 1.8;
+}
+
+.iframe {
+  width: 100%;
+  min-width: 85vw;
+  height: 100%;
+  min-height: 500px;
+  overflow: hidden;
+  left: -1.7rem;
+  position: relative;
+  padding: 0;
+  margin: 0;
 }

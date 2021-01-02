@@ -1,2 +1,7 @@
-<div class="squares-grid" [ngClass]="{dark: (theme$ |async) === 'dark', light: (theme$ | async) === 'light'}">
+<div class="squares-grid"  
+[ngClass]="{
+    dark: (theme$ |async) === 'dark', 
+    light: (theme$ | async) === 'light', 
+    start: (start$ | async)
+}">
 </div>

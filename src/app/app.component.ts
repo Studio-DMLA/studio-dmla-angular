@@ -36,10 +36,12 @@ export class AppComponent {
       if (main) {
         setTimeout(() => {
           main.classList.add('hiding');
+          this.themeService.appStarted();
         }, text - loading);
         setTimeout(() => {
           main.classList.add('hide');
           this.started = true;
+
         }, text - loading + 400);
       }
     }

@@ -1,7 +1,6 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute, ParamMap } from '@angular/router';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-page',
@@ -11,9 +10,10 @@ import { Observable } from 'rxjs';
 })
 export class PageComponent implements OnInit {
 
-  constructor(private sanitizer: DomSanitizer,
-              private route: ActivatedRoute
-    ) {}
+  constructor(
+    private sanitizer: DomSanitizer,
+    private route: ActivatedRoute
+  ) { }
 
   title: string;
   content: string;

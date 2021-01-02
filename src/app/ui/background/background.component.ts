@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Theme, ThemeService } from 'src/app/services/theme.service';
 
@@ -9,7 +9,6 @@ import { Theme, ThemeService } from 'src/app/services/theme.service';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BackgroundComponent implements OnInit {
-  @Input() started: boolean;
   start$: Observable<Boolean>;
   theme$: Observable<Theme>;
 

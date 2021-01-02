@@ -32,8 +32,8 @@ const routes: Routes = [
   },
   {
     component: PageComponent,
-    path: 'hire',
-    data: pages.hire
+    path: 'meeting',
+    data: pages.meet
   },
   { path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) },
   { path: 'contact', loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule) }

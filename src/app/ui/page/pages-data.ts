@@ -22,19 +22,10 @@ export const pages: Pages = {
     <div style="width: 100%; text-align: center;">
       <img src="./assets/logos/studio-dmla.svg" alt="Logo studio dmla" class="logo" />
     </div>
-    <h1 class="tagline">Digital marketing, the real stuff</h1>
-    <p >
-    •	Set up an initial call to discuss your digital marketing needs and goals;
-    </p>
-    <p>
-    •	We’ll create a strategy and source the best professionals globally to work on your project;
-    </p>
-    <p>
-    •	You’ll have one point of contact, from the planning until the final product is delivered. 
-    </p></div>`,
+    <h1 class="tagline">Digital marketing, the real stuff</h1></div>`,
   },
   about: {
-    title: "About",
+    title: "Why",
     active: true,
     link: "about",
     menu_icon: {
@@ -42,10 +33,30 @@ export const pages: Pages = {
       light: `<path fill="currentColor" d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z"></path>`,
       desc: "book",
     },
-    content: `<p>At Studio DMLA we believe that work should go beyond the industrial model, and we build a culture that empowers remote collaboration, autonomy, results and a shared vision.</p><p>
-        We do not do business as usual. Our digital boutique have real connections with our clients, provides perspective, and solutions for problems they did not know they have.</p><p>
-        We partner with the best in each field to deliver cutting-edge digital solutions to your organization while being responsible for the project management and final product.</p>
-        <div class="meetings-iframe-container" data-src="https://meetings.hubspot.com/mariapaula3?embed=true"></div>`,
+    content: `<p>At Studio DMLA we believe that work should go beyond the industrial model, and we build a culture that empowers remote collaboration, autonomy, results, and a shared vision. </p>
+    <p>We do not do business as usual. Our digital boutique has real connections with our clients, provides perspective, and solutions for problems they did not know they have. </p>
+    <p>We partner with the best in each field globally to deliver cutting-edge digital solutions to your organization while being responsible for the strategy, project management, and final product. </p>
+    <div class="flex">
+    <div class="MP">
+      <div class="img"><img src="./assets/MP.webp" alt="Maria Paula" /></div>
+      <div class="description"><h3>Maria Paula Murad, Founder & Head of Marketing and Sales</h3>
+      <p>Maria Paula Murad has a background in Journalism and more than fifteen years of experience working with strategic communications. Having worked in the international education industry for the past 7 years, Maria Paula built expertise in digital marketing through different roles at GV English Centres and ILSC Education Group. Before that, MP worked with corporate communications back in Brazil. At CDI, she worked with Alcoa to implement public relations initiatives. At Casas Bahia, MP created the content for internal communications, email marketing, and campaigns. At Alto Astral, Maria Paula was part of the team that started the company’s digital marketing department. Portuguese is her native language, and she is proficient in English and Spanish. <a href="https://www.linkedin.com/in/mariapaulamurad/" alt="connect with Maria on LinkedIn">Click here</a> to connect with Maria Paula on LinkedIn or <a href="/meeting" alt="schedule a meeting">here</a> to schedule a meeting. </p></div>
+      </div>
+      <div class="mission">
+        <h3>Mission statement</h3>
+        <p>“Design state of art digital marketing solutions through global partnerships and remote work.”</p>
+        <h3>Values</h3>
+        <ul> 
+          <li>Working smart leads to better results</li>
+          <li>Trust is the basis of any working relationship</li>
+          <li>Be mindful of yourself, others, and the impact of your actions in the world</li>
+          <li>Remote work brings global talent together and empowers economic development</li>
+          <li>If you want to communicate, language isn’t a barrier </li>
+          <li>Life-Work balance is sustainable</li>
+          <li>We believe in effective altruism and using our resources to help others.</li>
+          </div>
+          </div>
+    `,
   },
   projects: {
     title: "Portfolio",
@@ -61,17 +72,19 @@ export const pages: Pages = {
       desc: "buffer",
     },
     content: `<p>Check out the latest projects we have been working on:</p>
-    <div class="card" >
-      <a href="https://lnkd.in/gqXYtsK">
+    <div class="portfolio-items">
+    <div class="portfolio-card" >
+      <a href="https://lnkd.in/gqXYtsK" target="_blank">
+        <div class="img"><img src="/assets/portfolio/hawaii fee sheet.jpg" /></div>
         <h3>2021 Global Village Hawaii Fee Sheet:</h3>
-        <img src="https://lnkd.in/gqXYtsK" />
       </a>
     </div>
-    <div class="card" >
-      <a href="https://lnkd.in/gsZKx9F">
+    <div class="portfolio-card" >
+      <a href="https://lnkd.in/gsZKx9F" target="_blank">
+        <div class="img"><img src="/assets/portfolio/hawaii.jpg" /></div>
         <h3>2021 Global Village Hawaii Brochure:</h3>
-        <img src="https://lnkd.in/gsZKx9F" />
       </a>
+    </div>
     </div>`,
   },
   services: {
@@ -87,9 +100,16 @@ export const pages: Pages = {
           </path>`,
       desc: "seedling",
     },
-    content: `<p>At Studio DMLA we believe that work should go beyond the industrial model, and we build a culture that empowers remote collaboration, autonomy, results, and a shared vision. </p>
-    <p>We do not do business as usual. Our digital boutique has real connections with our clients, provides perspective, and solutions for problems they did not know they have. </p>
-    <p>We partner with the best in each field globally to deliver cutting-edge digital solutions to your organization while being responsible for the strategy, project management, and final product. </p>
+    content: ` 
+    <p >
+    1.	Set up an <a href="/meeting">initial call</a> to discuss your digital marketing needs and goals;
+    </p>
+    <p>
+    2.	We’ll create a strategy and source the best professionals globally to work on your project;
+    </p>
+    <p>
+    3.	You’ll have one point of contact, from the planning until the final product is delivered. 
+    </p>
     <br>
     <ul>
       <li>
@@ -98,7 +118,7 @@ export const pages: Pages = {
       </li>
       <li>
         <h3>Web Development</h3>
-        <p></p>
+        <p>Including coding from scratch, implementing web components, Angular developments, and Word Press templates customization. </p>
       </li>
       <li>
         <h3>eCommerce</h3>
@@ -150,8 +170,8 @@ export const pages: Pages = {
   },
   meet: {
     title: "Book a meeting",
-    active: false,
-    link: "contact/meeting",
+    active: true,
+    link: "meeting",
     menu_icon: {
       dark: `<path 
             d="M127.1 146.5c1.3 7.7 8 13.5 16 13.5h16.5c9.8 0 17.6-8.5 16.3-18-3.8-28.2-16.4-54.2-36.6-74.7-14.4-14.7-23.6-33.3-26.4-53.5C111.8 5.9 105 0 96.8 0H80.4C70.6 0 63 8.5 64.1 18c3.9 31.9 18 61.3 40.6 84.4 12 12.2 19.7 27.5 22.4 44.1zm112 0c1.3 7.7 8 13.5 16 13.5h16.5c9.8 0 17.6-8.5 16.3-18-3.8-28.2-16.4-54.2-36.6-74.7-14.4-14.7-23.6-33.3-26.4-53.5C223.8 5.9 217 0 208.8 0h-16.4c-9.8 0-17.5 8.5-16.3 18 3.9 31.9 18 61.3 40.6 84.4 12 12.2 19.7 27.5 22.4 44.1zM400 192H32c-17.7 0-32 14.3-32 32v192c0 53 43 96 96 96h192c53 0 96-43 96-96h16c61.8 0 112-50.2 112-112s-50.2-112-112-112zm0 160h-16v-96h16c26.5 0 48 21.5 48 48s-21.5 48-48 48z">
@@ -161,6 +181,6 @@ export const pages: Pages = {
           </path>`,
       desc: "mug-hot",
     },
-    content: ``,
+    content: `<div class="iframe"><iframe width="100%" height="400" src="https://meetings.hubspot.com/mariapaula3?embed=true"></iframe></div>`,
   },
 };

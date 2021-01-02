@@ -1,8 +1,12 @@
 .box {
     position: relative;
     z-index: 100;
-    max-width: 80vw;
-    min-height: 35vh;
+    @media only screen and (max-width: 600px) {
+        margin-left: 2rem;
+    }
+    max-width: 85vw;
+    min-width: 75vw;
+    min-height: 55vh;
     max-height: 85vh;
     padding: 1rem;
     background-color: rgba($color: #ececec, $alpha: 0.8);
@@ -11,10 +15,69 @@
     .title {
         line-height: 2rem;
         font-size: 2.2rem;
+        position: relative;
+        top: -1rem;
+        h1 {
+            line-height: 0.75;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
     }
     .content {
         padding: 1rem;
         width: 88%;
         font-weight: 450;
+    }
+}
+
+::ng-deep.MP {
+    @media only screen and (max-width: 600px) {
+       width: 100%;
+    }
+    @media only screen and (min-width: 600.01px) {
+        display: flex;
+    }
+    .img {
+        @media only screen and (max-width: 600px) {
+           width: 100%;
+        }
+        @media only screen and (min-width: 600.01px) {
+            align-self: center;
+           width: 20%;
+        }
+
+    }
+    .description {
+    @media only screen and (max-width: 600px) {
+       width: 100%;
+    }
+    @media only screen and (min-width: 600.01px) {
+        padding: 0.25rem 1rem;
+       width: 80%;
+    }
+}
+}
+::ng-deep img {
+    max-height: 100%;
+    width: 100%;        
+}
+
+::ng-deep.portfolio-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    .portfolio-card {
+        height: 100%;
+        padding: 1rem;
+        .img {
+            width: 100%;
+            max-height: 50vh;
+        }
+        h3 {
+            position: relative;    display: block;
+            top: -3rem;
+            width: 95%;
+            background-color: var(--bg-color-light);
+            padding: 1rem;
+        }
     }
 }

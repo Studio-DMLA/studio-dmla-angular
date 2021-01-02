@@ -1,3 +1,4 @@
+import { trigger, transition, useAnimation, animate, state, style } from '@angular/animations';
 import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Theme, ThemeService } from '../services/theme.service';
@@ -6,10 +7,25 @@ import { Theme, ThemeService } from '../services/theme.service';
   selector: 'app-ui',
   templateUrl: './ui.component.html',
   styleUrls: ['./ui.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  animations: [
+    trigger('animateIn', [
+    state('initial', style({
+      right: '-400%',
+      width: '1px',
+      height: '1px'
+    })),
+    state('final', style({
+      right: '0',
+      height: '5vw',
+      width: '5vw'
+    })),
+    transition('initial=>final', animate('200ms')),
+    transition('final=>initial', animate('100ms'))
+  ]),
+  ],
 })
 export class UiComponent implements OnInit {
-@Input() started: boolean;
 start$: Observable<Boolean>;
 theme$: Observable<Theme>;
 Theme = Theme;

@@ -1,10 +1,10 @@
-<div *ngIf="started">
-  <app-sidebar></app-sidebar>
+<div >
+  <app-sidebar ></app-sidebar>
 
-  <app-background started="started"></app-background>
-  <div class="block" style="cursor: pointer;" (click)="changeTheme()">
+  <app-background ></app-background>
+  <div class="block2" style="cursor: pointer;" (click)="changeTheme()">
     <ng-container *ngIf="(theme$ | async) as theme">
-      <img *ngIf="theme === Theme.Dark; else Light" src="../../assets/fa/sun-solid.svg" alt="" srcset=""
+      <img  *ngIf="theme === Theme.Dark; else Light" src="../../assets/fa/sun-solid.svg" alt="" srcset=""
         class="toggle {{theme}}">
       <ng-template #Light>
         <img src="../../assets/fa/moon-solid.svg" alt="" srcset="" class="toggle {{theme}}">
