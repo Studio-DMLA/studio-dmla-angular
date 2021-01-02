@@ -110,7 +110,7 @@ export const pages: Pages = {
     <p>
     3.	You’ll have one point of contact, from the planning until the final product is delivered. 
     </p>
-    <br>
+    <h3>Check below the service we offer:</h3>
     <ul>
       <li>
         <h3>Web Design</h3>
