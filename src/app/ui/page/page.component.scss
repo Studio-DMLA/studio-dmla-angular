@@ -28,6 +28,39 @@
         width: 88%;
         font-weight: 450;
     }
+    .tagline {
+        text-align: center;
+    }
+    .center-grid{
+        display: grid;
+        grid-template-columns: repeat(minmax(2, 4), 1fr);
+        gap: 10px;
+        grid-auto-rows: 200px;
+        grid-template-areas:
+          ". a a .";
+    }
+    .action-points {
+        padding-top: 2rem;
+        grid-area: a;
+        justify-self: center;
+        @media only screen and (max-width: 600px) {
+            width: 100%;
+        }
+        @media only screen and (min-width: 600.01px) {
+            width: 50%;
+        }
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        a.action-card {
+            text-decoration: none;
+            text-align: center;
+            color: var(--text-dark-grey);
+            svg {
+                max-width: 5rem;
+                max-height: 5rem;
+            }
+        }
+    }
 }
 
 ::ng-deep.MP {
@@ -65,19 +98,22 @@
 ::ng-deep.portfolio-items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
     .portfolio-card {
-        height: 100%;
-        padding: 1rem;
         .img {
             width: 100%;
             max-height: 50vh;
         }
         h3 {
             position: relative;    display: block;
-            top: -3rem;
-            width: 95%;
+            top: -1.5rem;
+            width: 100%;
             background-color: var(--bg-color-light);
-            padding: 1rem;
+            span {
+                padding: 1rem;
+            }
         }
     }
 }

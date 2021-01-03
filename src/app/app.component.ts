@@ -8,10 +8,8 @@ import { Theme, ThemeService } from './services/theme.service';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {
-  started = false;
   constructor(private themeService: ThemeService) {
     if (!document) {
-      this.started = true;
       this.themeService.appStarted();
     }
     this.removeInto();
@@ -40,8 +38,6 @@ export class AppComponent {
         }, text - loading);
         setTimeout(() => {
           main.classList.add('hide');
-          this.started = true;
-
         }, text - loading + 400);
       }
     }

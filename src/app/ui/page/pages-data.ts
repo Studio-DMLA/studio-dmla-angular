@@ -18,11 +18,7 @@ export interface Pages {
 
 export const pages: Pages = {
   home: {
-    content: `<div >
-    <div style="width: 100%; text-align: center;">
-      <img src="./assets/logos/studio-dmla.svg" alt="Logo studio dmla" class="logo" />
-    </div>
-    <h1 class="tagline">Digital marketing, the real stuff</h1></div>`,
+    content: null,
   },
   about: {
     title: "Why",
@@ -76,13 +72,13 @@ export const pages: Pages = {
     <div class="portfolio-card" >
       <a href="https://lnkd.in/gqXYtsK" target="_blank">
         <div class="img"><img src="/assets/portfolio/hawaii fee sheet.jpg" /></div>
-        <h3>2021 Global Village Hawaii Fee Sheet:</h3>
+        <h3><span>2021 Global Village Hawaii Fee Sheet:</span></h3>
       </a>
     </div>
     <div class="portfolio-card" >
       <a href="https://lnkd.in/gsZKx9F" target="_blank">
         <div class="img"><img src="/assets/portfolio/hawaii.jpg" /></div>
-        <h3>2021 Global Village Hawaii Brochure:</h3>
+        <h3><span>2021 Global Village Hawaii Brochure:</span></h3>
       </a>
     </div>
     </div>`,

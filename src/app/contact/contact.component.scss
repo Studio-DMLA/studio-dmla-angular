@@ -8,6 +8,9 @@
     background-color: rgba($color: #ececec, $alpha: 0.8);
     overflow: auto;
     overflow-x: hidden;
+    @media only screen and (max-width: 600px) {
+        margin-left: 2rem;
+    }
     .title {
         line-height: 2rem;
         font-size: 2.2rem;

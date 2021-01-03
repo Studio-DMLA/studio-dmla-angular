@@ -17,7 +17,7 @@ export class SidebarComponent implements OnInit {
   constructor(private sanitizer: DomSanitizer, public themeService: ThemeService) {
     this.pages = Object.values(pages).filter(page => page.active);
     this.theme$ = themeService.theme$;
-    console.log(this.pages);
+    // console.log(this.pages);
   }
 
   ngOnInit(): void {

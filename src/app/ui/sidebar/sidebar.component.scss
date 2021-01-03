@@ -54,7 +54,7 @@ aside {
       ul {
         display: flex;
         flex-direction: column;
-        height: 100%;
+        height: calc(100% - 2.5rem);
         list-style: none;
         padding: 0;
         margin: 0;
@@ -81,6 +81,25 @@ aside {
         }
         .svg-inline--fa {
           fill: $text-light-grey;
+        }
+      }
+      .social.open {
+        transform: translateX(85%);
+        transition: ease-in-out;
+        transition-duration: 0.4s;
+      }
+      .social {
+        max-height: 3rem;
+        color:$text-light-grey;
+        svg {
+          width: 1.8rem;
+          fill: $text-light-grey;
+        }
+        a {
+          text-decoration: none;
+          font-weight: 500;
+          font-size: 2rem;
+          color: $text-light-grey;
         }
       }
     }

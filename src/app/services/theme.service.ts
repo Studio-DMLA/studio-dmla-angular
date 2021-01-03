@@ -20,8 +20,8 @@ export class ThemeService {
 
 
   constructor() {
-    this._started.subscribe(start => console.log(start));
-    this._theme.subscribe(themed => console.log(themed));
+    // this._started.subscribe(start => console.log(start));
+    // this._theme.subscribe(themed => console.log(themed));
   }
 
   get getTheme(): Theme {

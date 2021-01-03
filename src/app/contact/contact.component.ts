@@ -1,5 +1,7 @@
 import { temporaryDeclaration } from '@angular/compiler/src/compiler_util/expression_converter';
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { ThemeService } from '../services/theme.service';
 declare const hbspt: any; 
 
 @Component({
@@ -8,8 +10,11 @@ declare const hbspt: any;
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
+  start$: Observable<Boolean>;
 
-  constructor() { }
+  constructor(public themeService: ThemeService) {
+    this.start$ = this.themeService.started$;
+   }
 
   ngOnInit(): void {
   }
