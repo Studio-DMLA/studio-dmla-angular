@@ -70,15 +70,15 @@ export const pages: Pages = {
     content: `<p>Check out the latest projects we have been working on:</p>
     <div class="portfolio-items">
     <div class="portfolio-card" >
+    <h3><span>2021 Global Village Hawaii Fee Sheet:</span></h3>
       <a href="https://lnkd.in/gqXYtsK" target="_blank">
         <div class="img"><img src="/assets/portfolio/hawaii fee sheet.jpg" /></div>
-        <h3><span>2021 Global Village Hawaii Fee Sheet:</span></h3>
       </a>
     </div>
     <div class="portfolio-card" >
+    <h3><span>2021 Global Village Hawaii Brochure:</span></h3>
       <a href="https://lnkd.in/gsZKx9F" target="_blank">
         <div class="img"><img src="/assets/portfolio/hawaii.jpg" /></div>
-        <h3><span>2021 Global Village Hawaii Brochure:</span></h3>
       </a>
     </div>
     </div>`,
@@ -97,16 +97,6 @@ export const pages: Pages = {
       desc: "seedling",
     },
     content: ` 
-    <p >
-    1.	Set up an <a href="/meeting">initial call</a> to discuss your digital marketing needs and goals;
-    </p>
-    <p>
-    2.	We’ll create a strategy and source the best professionals globally to work on your project;
-    </p>
-    <p>
-    3.	You’ll have one point of contact, from the planning until the final product is delivered. 
-    </p>
-    <h3>Check below the service we offer:</h3>
     <ul>
       <li>
         <h3>Web Design</h3>
@@ -118,21 +108,32 @@ export const pages: Pages = {
       </li>
       <li>
         <h3>eCommerce</h3>
-        <p>Including coding from scratch, implementing web components, Angular developments, and Word Press templates customization. </p>
-      </li>
-      <li>
-        <h3>CRM set up</h3>
         <p>Setup WooCommerce, configuration, SSL Enabling, and server requirements.</p>
       </li>
       <li>
-        <h3>SEO & SEM</h3>
+        <h3>CRM set up</h3>
         <p>Database organization; Sales and Marketing workflows; onboarding and training.</p>
+      </li>
+      <li>
+        <h3>SEO & SEM</h3>
+        <p>SEO audit, technical SEO, keyword research, online marketing strategy, and implementation.</p>
       </li>
       <li>
         <h3>Offline marketing</h3>
         <p>Visual identity – Brand manual, logo design, and corporate materials. Flyer, folder, and brochure design to be displayed online and/or printed.</p>
       </li>
-    </ul>`,
+    </ul>
+    <h3>Lets get started:</h3>
+    <p >
+    1.	Set up an <a href="/meeting">initial call</a> to discuss your digital marketing needs and goals;
+    </p>
+    <p>
+    2.	We’ll create a strategy and source the best professionals globally to work on your project;
+    </p>
+    <p>
+    3.	You’ll have one point of contact, from the planning until the final product is delivered. 
+    </p>
+    `,
   },
   sign_up: {
     title: "Sign up for work",

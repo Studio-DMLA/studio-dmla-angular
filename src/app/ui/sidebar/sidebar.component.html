@@ -6,7 +6,7 @@
         <div class="nav"  [ngClass]="{open: sidebarOpen}">
             <ul>
                 <li *ngFor="let page of pages">
-                    <a [routerLink]="page.link" (click)="toggleSidebar()">
+                    <a [routerLink]="page.link" (click)="closeSidebar()">
                         <svg aria-hidden="true" focusable="false" data-prefix="fab" 
                         class="svg-inline--fa fa-w-14" [ngClass]="'fa-' + page.menu_icon.desc" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 448 512" [innerHTML]="sanitize(page.menu_icon[theme])">
@@ -17,7 +17,7 @@
                 </li>
                 
                 <li>
-                    <a [routerLink]="'contact'" (click)="toggleSidebar()">
+                    <a [routerLink]="'contact'" (click)="closeSidebar()">
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope-open"
                         class="svg-inline--fa fa-envelope-open fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 512 512">
