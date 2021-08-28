@@ -35,6 +35,11 @@ const routes: Routes = [
     path: 'meeting',
     data: pages.meet
   },
+  {
+    component: PageComponent,
+    path: 'privacy-policy',
+    data: pages.privacy
+  },
   { path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) },
   { path: 'contact', loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule) }
 ];
