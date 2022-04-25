@@ -1,12 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
-
 
 import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire';
@@ -26,12 +25,12 @@ import { LazyImagesDirective } from './tools/lazy-images/lazy-images.directive';
 @NgModule({
   declarations: [
     AppComponent,
-    SquaresComponent, 
-    CirclesComponent, 
-    CircleComponent, 
-    BackgroundComponent, 
-    UiComponent, 
-    SidebarComponent, 
+    SquaresComponent,
+    CirclesComponent,
+    CircleComponent,
+    BackgroundComponent,
+    UiComponent,
+    SidebarComponent,
     PageComponent,
     LazyImagesDirective
   ],
