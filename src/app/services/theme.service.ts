@@ -11,8 +11,8 @@ export enum Theme {
 })
 export class ThemeService {
   started = false;
-  private _started = new BehaviorSubject<Boolean>(false);
-  public readonly started$: Observable<Boolean> = this._started.asObservable();
+  private _started = new BehaviorSubject<boolean>(false);
+  public readonly started$: Observable<boolean> = this._started.asObservable();
 
   theme = Theme.Dark;
   private _theme = new BehaviorSubject<Theme>(Theme.Dark);

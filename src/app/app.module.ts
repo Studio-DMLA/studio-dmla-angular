@@ -8,10 +8,7 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 
 import { environment } from '../environments/environment';
-import { AngularFireModule } from '@angular/fire';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { AngularFireStorageModule } from '@angular/fire/storage';
-import { AngularFireAuthModule } from '@angular/fire/auth';
+import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 
 import { UiComponent } from './ui/ui.component';
 import { SquaresComponent } from './ui/background/squares/squares.component';
@@ -39,10 +36,7 @@ import { LazyImagesDirective } from './tools/lazy-images/lazy-images.directive';
     BrowserAnimationsModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule,
-    AngularFireAuthModule,
-    AngularFireStorageModule
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
   ],
   providers: [],
   exports: [],
